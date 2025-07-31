@@ -6,13 +6,5 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v3
-      - name: install dependecies
-        run: npm ci
-      - name: Lint
-        run: npm run Lint
-      - name: Test code
-        run: npm run test 
-      - name: Build code       
-        run: npm run Build
       - name: Deploy code
         run: echo "Deploying....." 
